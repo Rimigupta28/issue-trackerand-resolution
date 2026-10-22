@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f8fb;
+  color: #172b4d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(82, 103, 232, 0.35);
+  outline-offset: 2px;
+}
+
+.field {
+  @apply w-full rounded-xl border border-line bg-white px-3.5 py-3 text-sm text-ink placeholder:text-slate-400 focus:border-brand focus:outline-none;
+}
+
+.label {
+  @apply mb-1.5 block text-sm font-semibold text-slate-700;
+}
+
+.panel {
+  @apply rounded-2xl border border-line bg-white shadow-panel;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-line bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60;
+}

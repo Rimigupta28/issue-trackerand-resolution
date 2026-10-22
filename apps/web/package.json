@@ -1,0 +1,21 @@
+{
+  "name": "@issue-tracker/web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check": "next build"
+  },
+  "dependencies": {
+    "@next/env": "16.4.2",
+    "next": "16.4.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "issue-tracking-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace @issue-tracker/api",
+    "dev:web": "npm run dev --workspace @issue-tracker/web",
+    "start:api": "npm run start --workspace @issue-tracker/api",
+    "start:web": "npm run start --workspace @issue-tracker/web",
+    "db:migrate": "npm run db:migrate --workspace @issue-tracker/api",
+    "db:seed": "npm run db:seed --workspace @issue-tracker/api",
+    "db:deploy": "npm run db:deploy --workspace @issue-tracker/api",
+    "build:web": "npm run build --workspace @issue-tracker/web",
+    "check": "npm run check --workspace @issue-tracker/api && npm run check --workspace @issue-tracker/web"
+  }
+}
